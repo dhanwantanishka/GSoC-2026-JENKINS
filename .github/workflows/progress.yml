@@ -16,13 +16,14 @@ jobs:
 
       - name: Calculate progress metrics
         run: |
-          echo "Calculating progress..."
-
           DONE=$(grep -R "\[x\]" weekly-logs | wc -l || echo 0)
-          TOTAL=$(grep -R "\[\ \]" weekly-logs | wc -l || echo 0)
-          PRS=$(grep -R "PR:" CONTRIBUTIONS.md | wc -l || echo 0)
+          TOTAL=$(grep -R "\[ \]" weekly-logs | wc -l || echo 0)
+          PRS=$(grep -R "^- PR:" CONTRIBUTIONS.md | wc -l || echo 0)
 
-          COMPLETION=$((DONE * 100 / (DONE + TOTAL + 1)))
+          COMPLETION=0
+          if [ $((DONE + TOTAL)) -gt 0 ]; then
+            COMPLETION=$((DONE * 100 / (DONE + TOTAL)))
+          fi
 
           cat <<EOF > progress.json
           {
@@ -33,9 +34,10 @@ jobs:
           }
           EOF
 
+          echo "Generated progress.json"
           cat progress.json
 
-      - name: Commit updated progress
+      - name: Commit progress.json
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
