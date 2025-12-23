@@ -18,9 +18,9 @@ This repository documents my structured preparation journey and serves as verifi
 
 ---
 
-## 🗂 Repository Structure
+## 📁 Repository Structure
 
-'''text
+```text
 jenkins-gsoc-2026/
 │
 ├── README.md                 # Main roadmap (this file)
@@ -46,8 +46,7 @@ jenkins-gsoc-2026/
 └── proposal/                 # GSoC proposal drafts
     ├── draft.md
     └── final.pdf
-'''
-
+```
 ---
 
 ## 🔗 Jenkins Resources
