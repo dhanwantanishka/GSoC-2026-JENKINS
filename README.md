@@ -388,8 +388,59 @@ Weekly execution and reflections are maintained in `weekly-logs/`.
 
 ---
 
+## 📊 Progress Dashboard
+
+### 🔢 Live Metrics (Auto-calculated)
+> Source of truth: `progress.json` (updated by GitHub Actions)
+
+| Metric | Value |
+|------|------|
+| Tasks Completed | 1 |
+| Tasks Remaining | 0 |
+| Completion % | 100% |
+| Pull Requests | 0 |
+
+---
+
 ### ⭐ Final Note
 
 This repository represents long-term commitment to open-source engineering and the Jenkins community.
 
 Thank you for reviewing.
+
+### 📈 Overall Completion Trend
+
+```mermaid
+xychart-beta
+    title "Overall Preparation Progress (%)"
+    x-axis ["Week 1","Week 2","Week 3","Week 4","Week 5","Week 6","Week 7","Week 8","Week 9","Week 10","Week 11","Week 12"]
+    y-axis "Completion %" 0 --> 100
+    line [100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+```
+
+
+
+### 🧩 Pull Requests Over Time
+
+```mermaid
+xychart-beta
+    title "Pull Requests Over Time"
+    x-axis ["Week 1","Week 2","Week 3","Week 4","Week 5","Week 6","Week 7","Week 8","Week 9","Week 10","Week 11","Week 12"]
+    y-axis "PR Count" 0 --> 15
+    line [0,0,0,0,0,0,0,0,0,0,0,0]
+```
+
+
+### 📌 Phase-wise Progress
+
+```mermaid
+pie title Phase Completion
+    "Phase 1 – Foundations" : 5
+    "Phase 2 – Git & Community" : 0
+    "Phase 3 – Jenkins Internals" : 0
+    "Phase 4 – Proposal" : 0
+```
+
+
+
+
