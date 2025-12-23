@@ -23,9 +23,10 @@ This repository documents my structured preparation journey and serves as verifi
 
 jenkins-gsoc-2026/
 │
-├── README.md                # Main roadmap (this file)
-├── CONTRIBUTIONS.md         # All PRs, issues, community links
-├── weekly-logs/             # Weekly execution & reflections
+├── README.md                 # Main roadmap (this file)
+├── CONTRIBUTIONS.md          # All PRs, issues, community links
+│
+├── weekly-logs/              # Weekly execution & reflections
 │   ├── week-01.md
 │   ├── week-02.md
 │   ├── week-03.md
@@ -37,12 +38,12 @@ jenkins-gsoc-2026/
 │   ├── week-09.md
 │   ├── week-10.md
 │   ├── week-11.md
-│   └── week-12.md           # Final preparation + proposal submission
+│   └── week-12.md            # Final preparation & proposal submission
 │
-├── poc/                     # Proof of Concept for proposal
+├── poc/                      # Proof of Concept for proposal
 │   └── README.md
 │
-└── proposal/                # GSoC proposal drafts
+└── proposal/                 # GSoC proposal drafts
     ├── draft.md
     └── final.pdf
 
